@@ -7,9 +7,9 @@
     $password = "k3LFZYKXIJ"; //Senha de acesso ao nosso banco de daddos
 
     try {
-        $pdo = new PDO('mysql:host='.$hostname.';dbaname='.$dbname, $username, $password);
+        $pdo = new PDO('mysql:host='.$hostname.';dbname='.$dbname, $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Conexão com banco de dados, realizado com sucesso!!!';
+        // echo 'Conexão com banco de dados, realizado com sucesso!!!';
     }catch(PDOException $e) {
         echo 'Erro: '.$e->getMessage();
     }

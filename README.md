@@ -1,6 +1,6 @@
 # intesivão Full Stack 2022
 
-Aula 01 - 03/01/2021
+# Aula 01 - 03/01/2021
 1.	Introdução e explicações iniciais
 2.	Configuração do ambiente de desenvolvimento VSCODE
 3.	Criação do ambiente de repositório de arquivos e gestão do projeto
@@ -11,3 +11,11 @@ Aula 01 - 03/01/2021
 8.	Criação da estrutura do projeto (Pastas, e elementos necessários para o desenvolvimento do projeto.
 9.	Criação da conexão com o banco de dados.
 10. Commit para o Git.
+
+# Aula 02 - 04/01/2021
+1.	Correção no relacionamento do banco de dados [PRODUTO - ESTOQUE]
+2.	Criação da tela de login do sistema
+3.	Desenvolvimento do CRUD para a tabela ATENDENTE
+4.	Integração da tabela ATENDENTE com o login do sistema
+5.	Desenvolvimento do CRUD da tabela CLIENTE
+6.	Desenvolvimento do CRUD da tabela FORNECEDOR
