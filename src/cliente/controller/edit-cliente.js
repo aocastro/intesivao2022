@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-cliente').on('click', 'button.btn-view', function(e) {
+    $('#table-cliente').on('click', 'button.btn-edit', function(e) {
 
         e.preventDefault()
 
@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Visualização de registro')
+        $('.modal-title').append('Edição de registro')
 
         let ID = `ID=${$(this).attr('id')}`
 
@@ -23,13 +23,20 @@ $(document).ready(function() {
                 if (dado.tipo == "success") {
                     $('.modal-body').load('src/cliente/view/form-cliente.html', function() {
                         $('#NOME').val(dado.dados.NOME)
-                        $('#NOME').attr('readonly', 'true')
-                        $('#LOGIN').val(dado.dados.LOGIN)
-                        $('#LOGIN').attr('readonly', 'true')
-                        $('#SENHA').val(dado.dados.SENHA)
-                        $('#SENHA').attr('readonly', 'true')
+                        $('#RG').val(dado.dados.RG)
+                        $('#CPF').val(dado.dados.CPF)
+                        $('#CEP').val(dado.dados.CEP)
+                        $('#LOGRADOURO').val(dado.dados.LOGRADOURO)
+                        $('#NUMERO').val(dado.dados.NUMERO)
+                        $('#BAIRRO').val(dado.dados.BAIRRO)
+                        $('#CIDADE').val(dado.dados.CIDADE)
+                        $('#UF').val(dado.dados.UF)
+                        $('#EMAIL').val(dado.dados.EMAIL)
+                        $('#CELULAR').val(dado.dados.CELULAR)
+                        $('#ID').val(dado.dados.ID)
                     })
-                    $('.btn-save').hide()
+                    $('.btn-save').removeAttr('data-operation', 'insert')
+                    $('.btn-save').show()
                     $('#modal-cliente').modal('show')
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert

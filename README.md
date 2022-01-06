@@ -17,5 +17,11 @@
 2.	Criação da tela de login do sistema
 3.	Desenvolvimento do CRUD para a tabela ATENDENTE
 4.	Integração da tabela ATENDENTE com o login do sistema
-5.	Desenvolvimento do CRUD da tabela CLIENTE
-6.	Desenvolvimento do CRUD da tabela FORNECEDOR
+
+# Aula 03 - 05/01/2021
+1.  Demonstração da correção de erro do banco de dados
+2.  Finalização do CRUD para a tabela ATENDENTE
+3.	Desenvolvimento do CRUD da tabela CLIENTE
+4.	Desenvolvimento do CRUD da tabela FORNECEDOR
+5.  Desenvolvimento do CRUD da tabela PRODUTO
+6.  Desenvolvimento do CRUD da tabela ESTOQUE

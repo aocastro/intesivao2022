@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-12 col-md-10">
                             <h4 class="text-danger">
-                                Gerenciar Atendentes
+                                Gerenciar Fornecedores
                             </h4>
                         </div>
                         <div class="col-12 col-md-2">
@@ -19,11 +19,12 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-hover" id="table-atendente">
+                    <table class="table table-hover" id="table-fornecedor">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col" class="text-center">ID</th>
                                 <th scope="col" class="text-center">NOME</th>
+                                <th scope="col" class="text-center">TELEFONE</th>
                                 <th scope="col" class="text-center">AÇÕES</th>
                             </tr>
                         </thead>
@@ -35,8 +36,8 @@
 </div>
 
 <!-- Janela modal para recebimento das funcionalidades do CRUD -->
-<div id="modal-atendente" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+<div id="modal-fornecedor" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="my-modal-title">Title</h5>
@@ -57,8 +58,8 @@
 
 <!-- linkagem de todas as funcionalidade jQuery que serão utilizadas em tela -->
 
-<script src="src/atendente/controller/list-atendente.js"></script>
-<script src="src/atendente/controller/new-atendente.js"></script>
-<script src="src/atendente/controller/save-atendente.js"></script>
-<script src="src/atendente/controller/view-atendente.js"></script>
-<script src="src/atendente/controller/edit-atendente.js"></script>
+<script src="src/fornecedor/controller/list-fornecedor.js"></script>
+<script src="src/fornecedor/controller/new-fornecedor.js"></script>
+<script src="src/fornecedor/controller/save-fornecedor.js"></script>
+<script src="src/fornecedor/controller/view-fornecedor.js"></script>
+<script src="src/fornecedor/controller/edit-fornecedor.js"></script>
