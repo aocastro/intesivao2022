@@ -7,17 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema para Gerenciamento de Cantina</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="libs/materialDesignIcons/css/materialdesignicons.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="libs/sweetAlert2/dist/sweetalert2.css">
 </head>
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Sistema para Gerenciamento de Cantina</h1>
-        <p class="lead">Login do Sistema</p>
+    <div class="jumbotron jumbotron-fluid banner">
+        <h1 class="display-4 text-center text-dark">Sistema para Gerenciamento de Cantina</h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="img/hamburguer.png" class="img-fluid" alt="Logo do sistema">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card shadow border-primary mt-2">
+                    <div class="card-header bg-primary">
+                        <div class="card-title">
+                            <h4 class="text-white text-center">Login do sistema</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form id="form-login">
+                            <div class="form-group">
+                                <label>Login</label>
+                                <input type="text" name="LOGIN" id="LOGIN" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" name="SENHA" id="SENHA" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer bg-primary">
+                        <button class="btn btn-outline-light btn-block btn-login">
+                            <i class="mdi mdi-login mdi-24px"></i> Acessar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid border-top border-primary mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center text-primary">
+                    <strong>Todos os direitos reservados.</strong> <br> Desenvolvimento com muito amor e dedicação por adriano<strong>Castro</strong>.
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="libs/sweetAlert2/dist/sweetalert2.js"></script>
+    <script src="src/atendente/controller/login-atendente.js"></script>
 </body>
 
 </html>

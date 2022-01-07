@@ -11,7 +11,7 @@
     $colunas = $requestData['columns'];
 
     //Preparar o comando sql para obter os dados da categoria
-    $sql = "SELECT ID, FORNECEDOR_ID, DATA, VENCIMENTO FROM COMPRA WHERE 1=1 ";
+    $sql = "SELECT C.ID, F.NOME, DATE_FORMAT(C.DATA, '%d/%m/%Y') AS DATACOMPRA, DATE_FORMAT(C.VENCIMENTO, '%d/%m/%Y') AS DATAVENCIMENTO FROM COMPRA C, FORNECEDOR F WHERE C.FORNECEDOR_ID = F.ID AND 1=1 ";
 
     //Obter o total de registros cadastrados
     $resultado = $pdo->query($sql);

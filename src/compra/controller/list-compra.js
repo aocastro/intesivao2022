@@ -14,15 +14,15 @@ $(document).ready(function() {
                 "className": 'text-center'
             },
             {
-                "data": 'DATA',
+                "data": 'DATACOMPRA',
                 "className": 'text-center'
             },
             {
-                "data": 'FORNECEDOR_ID',
+                "data": 'NOME',
                 "className": 'text-center'
             },
             {
-                "data": 'VENCIMENTO',
+                "data": 'DATAVENCIMENTO',
                 "className": 'text-center'
             },
             {
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 "render": function(data, type, row, meta) {
                     return `
                     <button id="${data}" class="btn btn-info btn-sm btn-view"><i class="mdi mdi-eye"></i></button>
-                    <button id="${data}" class="btn btn-primary btn-sm btn-edit"><i class="mdi mdi-pencil"></i></button>
+                    <button id="${data}" class="btn btn-danger btn-sm btn-delete"><i class="mdi mdi-delete"></i></button>
                     `
                 }
             }

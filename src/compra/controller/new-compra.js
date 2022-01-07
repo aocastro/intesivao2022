@@ -12,16 +12,15 @@ function buscaProduto(find) {
         success: function(dados) {
             $('.result').empty()
             for (const result of dados) {
-                console.log(result.NOME)
                 $('#result').append(`
                     <div class="form-group row result" id="PRODUTO${result.ID}">
                         <div class="col-12 col-sm-10 col-md-10">
                             <input type="text" name="PRODUTO" id="PRODUTO" class="form-control" value="${result.NOME}" readonly>
-                            <input type="hidden" name="PRODUTO_ID" id="PRODUTO_ID" value="${result.ID}"/>
+                            <input type="hidden" name="PRODUTO_ID[]" id="PRODUTO_ID" value="${result.ID}"/>
                         </div>
                         <div class="col-12 col-sm-2 col-md-2">
                             <button id="${result.ID}" class="btn btn-primary btn-block btn-selected">Selecionar</button>
-                            <input type="text" name="QTDE${result.ID}" id="QTDE${result.ID}" class="form-control d-none" placeholder="Quantidade">
+                            <input type="text" name="QTDE[]" id="QTDE${result.ID}" class="form-control d-none" placeholder="Quantidade">
                         </div>
                     </div>
                 `)
