@@ -1,0 +1,66 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                            <h4 class="text-danger">
+                                Gerenciar Compras
+                            </h4>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-success btn-block btn-new">
+                                <i class="mdi mdi-plus-circle"></i> Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="table-compra">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="text-center">ID</th>
+                                <th scope="col" class="text-center">DATA</th>
+                                <th scope="col" class="text-center">FORNECEDOR</th>
+                                <th scope="col" class="text-center">VENCIMENTO</th>
+                                <th scope="col" class="text-center">AÇÕES</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Janela modal para recebimento das funcionalidades do CRUD -->
+<div id="modal-compra" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button id="close" class="btn btn-secondary"><i class="mdi mdi-close-circle"></i> Fechar</button>
+                <button class="btn btn-success btn-save"><i class="mdi mdi-content-save"></i> Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- linkagem de todas as funcionalidade jQuery que serão utilizadas em tela -->
+
+<script src="src/compra/controller/list-compra.js"></script>
+<script src="src/compra/controller/new-compra.js"></script>
+<script src="src/compra/controller/save-compra.js"></script>
+<script src="src/compra/controller/view-compra.js"></script>
+<script src="src/compra/controller/edit-compra.js"></script>

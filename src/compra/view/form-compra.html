@@ -1,0 +1,51 @@
+<form id="form-compra">
+    <div class="form-group">
+        <label>Fornecedor</label>
+        <select name="FORNECEDOR_ID" id="FORNECEDOR_ID" class="form-control">
+            <option value="">Selecione o fornecedor ....</option>
+        </select>
+    </div>
+    <div class="form-group row">
+        <div class="col-12 col-sm-3 col-md-3">
+            <label>Data Compra</label>
+            <input type="date" name="DATA" id="DATA" class="form-control">
+        </div>
+        <div class="col-12 col-sm-3 col-md-3">
+            <label>Valor da compra</label>
+            <input type="number" step="any" name="VALORTOTAL" id="VALORTOTAL" class="form-control">
+        </div>
+        <div class="col-12 col-sm-3 col-md-3">
+            <label>Forma de pagamento</label>
+            <select name="FORMAPGTO" id="FORMAPGTO" class="form-control">
+                <option value="">Selecione a forma de pagamento</option>
+                <option value="1">Dinheiro</option>
+                <option value="2">Cartão de Crédito</option>
+                <option value="3">Cartão de Débito</option>
+                <option value="4">Boleto</option>
+                <option value="5">PIX</option>
+            </select>
+        </div>
+        <div class="col-12 col-sm-3 col-md-3">
+            <label>Vencimento</label>
+            <input type="date" name="VENCIMENTO" id="VENCIMENTO" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-12 col-sm-10 col-md-10">
+            <input type="text" name="find" id="find" class="form-control" placeholder="Digite o produto a ser buscado...">
+        </div>
+        <div class="col-12 col-sm-2 col-md-2">
+            <button class="btn btn-success btn-block btn-find">
+                <i class="mdi mdi-magnify-expand"></i> Procurar
+            </button>
+        </div>
+    </div>
+    <div id="result">
+
+    </div>
+
+    <div id="products" class="form-group row">
+
+    </div>
+    <input type="hidden" name="ID" id="ID">
+</form>

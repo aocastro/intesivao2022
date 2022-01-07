@@ -25,3 +25,9 @@
 4.	Desenvolvimento do CRUD da tabela FORNECEDOR
 5.  Desenvolvimento do CRUD da tabela PRODUTO
 6.  Desenvolvimento do CRUD da tabela ESTOQUE
+
+# Aula 0 - 06/01/2021
+1.  Finalização do CRUD para a tabela PRODUTO
+2.	Desenvolvimento do CRUD da tabela COMPRA
+3.	Desenvolvimento do CRUD da tabela VENDA
+4.  Desenvolvimento do CRUD da tabela ESTOQUE
